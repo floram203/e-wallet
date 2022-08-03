@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>E wallet System</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="brand"><span>Welcome </span> E wallet system</h1>
+      <div class="wrapper">
+        <div class="company-info">
+          <h3>Sign Up</h3>
+          <ul>
+            <li><i class="fa fa-road"></i> Kigali</li>
+            <li><i class="fa fa-phone"></i> (+250) 785182823</li>
+            <li><i class="fa fa-envelope"></i> ewallet@gmail.com</li>
+          </ul>
+        </div>
+        <div class="contact">
+          <h3>Email Us</h3>
+          <div class="alert">Your message has been sent</div>
+          <form id="form-container-signup">
+            <p>
+              <label>Email Address</label>
+              <input type="email" name="email" id="email" required />
+            </p>
+            <p>
+              <label>Password</label>
+              <input type="password" name="password" id="password" required />
+            </p>
+            <p class="full">
+              <button type="submit">Sign Up</button>
+            </p>
+            <p>Already have an account <a href="/login.html">Login</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

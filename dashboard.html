@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Acme Web Design</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="brand"><span>E-</span>WALLET</h1>
+      <div class="wrapper">
+        <div class="company-info">
+          <h3>Welcome to E-WALLET</h3>
+          <ul>
+            <li><i class="fa fa-road"></i> 44 Something st</li>
+            <li><i class="fa fa-phone"></i> (555) 555-5555</li>
+            <li><i class="fa fa-envelope"></i> test@acme.test</li>
+          </ul>
+        </div>
+        <div class="dashboard">
+          <div class="item">
+            <p>Balance</p>
+            <p>1000 Rwf</p>
+            <button id="wthMyBtn">WITHDRAW</button>
+            <!-- Trigger/Open The Modal -->
+            <!-- Trigger/Open The Modal -->
+            <button id="myBtn">SEND MONEY</button>
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <div>
+                  <div class="contact">
+                    <h3>Send Money</h3>
+                    <form id="form-container-send">
+                      <p>
+                        <label>Enter a money</label>
+                        <input
+                          type="number"
+                          name="amount"
+                          id="amount"
+                          required
+                        />
+                      </p>
+                      <p>
+                        <label>Reciever</label>
+                        <input
+                          type="text"
+                          name="reciever"
+                          id="reciever"
+                          required
+                        />
+                      </p>
+                      <p class="full">
+                        <button type="submit">SEND</button>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div id="wthMyModal" class="WthModal">
+               <!-- Modal content -->
+               <div class="modal-content">
+                <span class="wthClose">&times;</span>
+                <div>
+                  <div class="contact">
+                    <h3>Withdraw Money</h3>
+                    <form id="form-container-send">
+                      <p>
+                        <label>Enter a money</label>
+                        <input
+                          type="number"
+                          name="amount"
+                          id="amount"
+                          required
+                        />
+                      </p>
+                      <p class="full">
+                        <button type="submit">With Draw</button>
+                      </p>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            
+          </div>
+          <div class="item">
+            <p>Received</p>
+            <p>1000 Rwf</p>
+          </div>
+          <div class="item">
+            <p>Sent</p>
+            <p>1000 Rwf</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-storage.js"></script>
+
+    <script src="./dashboard.js"></script>
+  </body>
+</html>
